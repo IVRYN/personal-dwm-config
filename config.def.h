@@ -15,6 +15,7 @@ static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { foreground, background, background },
 	[SchemeSel]  = { bBlue, background,  bBlue },
+	[SchemeTitle]  = { bYellow, background,  background },
 };
 
 /* tagging */
