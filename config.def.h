@@ -37,14 +37,14 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class            instance    title                       tags mask     isfloating   monitor    scratch key */
-	{ "Gimp",           NULL,       NULL,                       0,            1,           -1,        0  },
-	{ "firefox",        NULL,       NULL,                       1 << 1,       0,           -1,        0  },
+	/* class            instance    title                       tags mask     isfloating   monitor      float x,y,w,h    scratch key */
+	{ "Gimp",           NULL,       NULL,                       0,            1,           -1,          50,50,500,500,   0  },
+	{ "firefox",        NULL,       NULL,                       1 << 1,       0,           -1,          50,50,500,500,   0  },
 
     // Scratchpads
-    { "Alacritty",      NULL,       "Termpad",                  0,            1,           -1,       't' },
-	{ "Alacritty",      NULL,       "Ranger - File Manager",    0,            1,           -1,       'r' },
-	{ "Alacritty",      NULL,       "Htop - Resource Manager",  0,            1,           -1,       'h' },
+    { "Alacritty",      NULL,       "Termpad",                  0,            1,           -1,          50,50,850,850,  't' },
+	{ "Alacritty",      NULL,       "Ranger - File Manager",    0,            1,           -1,          50,50,850,850,  'r' },
+	{ "Alacritty",      NULL,       "Htop - Resource Manager",  0,            1,           -1,          50,50,850,850,  'h' },
 };
 
 /* layout(s) */
