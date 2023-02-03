@@ -124,3 +124,11 @@ static const Button buttons[] = {
 	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
 };
 
+/* signal definitions */
+/* signum must be greater than 0 */
+/* trigger signals using `xsetroot -name "fsignal:<signum>"` */
+static Signal signals[] = {
+    /* signal ID        function        argument  */
+    {  1,               togglescratch,  {.v = &scratchpads[0]} },
+    {  2,               togglescratch,  {.v = &scratchpads[1]} },
+};
