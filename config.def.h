@@ -37,14 +37,14 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class            instance    title                       tags mask     isfloating   monitor      float x,y,w,h    scratch key */
-	{ "Gimp",           NULL,       NULL,                       0,            1,           -1,          50,50,500,500,   0  },
-	{ "firefox",        NULL,       NULL,                       1 << 1,       0,           -1,          50,50,500,500,   0  },
+	/* class            instance    title                       tags mask     isfloating   monitor      float x,y,w,h       floatborder     scratch key */
+	{ "Gimp",           NULL,       NULL,                       0,            1,           -1,          50,50,500,500,      borderpx,        0  },
+	{ "firefox",        NULL,       NULL,                       1 << 1,       0,           -1,          50,50,500,500,      borderpx,        0  },
 
     // Scratchpads
-    { "Alacritty",      NULL,       "Termpad",                  0,            1,           -1,          50,50,850,850,  't' },
-	{ "Alacritty",      NULL,       "Ranger - File Manager",    0,            1,           -1,          50,50,850,850,  'r' },
-	{ "Alacritty",      NULL,       "Htop - Resource Manager",  0,            1,           -1,          50,50,850,850,  'h' },
+    { "Alacritty",      NULL,       "Termpad",                  0,            1,           -1,          50,50,850,850,      borderpx,       't' },
+	{ "Alacritty",      NULL,       "Ranger - File Manager",    0,            1,           -1,          50,50,850,850,      borderpx,       'r' },
+	{ "Alacritty",      NULL,       "Htop - Resource Manager",  0,            1,           -1,          50,50,850,850,      borderpx,       'h' },
 };
 
 /* layout(s) */
@@ -92,7 +92,7 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
     { MODKEY,                       XK_grave,  togglescratch,  {.v = &scratchpads[0] } },
     { MODKEY,                       XK_r,      togglescratch,  {.v = &scratchpads[1] } },
-    { MODKEY,                       XK_r,      togglescratch,  {.v = &scratchpads[1] } },
+    { MODKEY,                       XK_h,      togglescratch,  {.v = &scratchpads[2] } },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
 	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
