@@ -13,6 +13,8 @@ static const int showbar            = 1;     /* 0 means no bar */
 static const int topbar             = 1;     /* 0 means bottom bar */
 static const char *fonts[]          = { "Hack Nerd Font Mono:size=10" };
 
+#define ICONSIZE 16 // winicon size
+#define ICONSPACING 10 // space between icon and title
 #include "themes/gruvbox.h"
 
 static const char *colors[][3]      = {
