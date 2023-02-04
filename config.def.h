@@ -45,6 +45,7 @@ static const Rule rules[] = {
     { "Alacritty",      NULL,       "Termpad",                  0,            1,           -1,          50,50,850,850,      borderpx,       't' },
 	{ "Alacritty",      NULL,       "Ranger - File Manager",    0,            1,           -1,          50,50,850,850,      borderpx,       'r' },
 	{ "Alacritty",      NULL,       "Htop - Resource Manager",  0,            1,           -1,          50,50,850,850,      borderpx,       'h' },
+	{ "Alacritty",      NULL,       "NcmpCCP - Music Player",   0,            1,           -1,          50,50,850,850,      borderpx,       'p' },
 };
 
 /* layout(s) */
@@ -83,6 +84,7 @@ static const char *scratchpads[][9] =
     {"t", "alacritty", "-t", "Termpad", NULL },
     {"r", "alacritty", "-t", "Ranger - File Manager", "-e", "ranger", NULL },
     {"h", "alacritty", "-t", "Htop - Resource Manager", "-e", "htop", NULL },
+    {"p", "alacritty", "-t", "NcmpCPP - Music Player", "-e", "ncmpcpp", NULL },
 };
 
 static const Key keys[] = {
@@ -150,4 +152,5 @@ static Signal signals[] = {
     {  1,               togglescratch,  {.v = &scratchpads[0]} },
     {  2,               togglescratch,  {.v = &scratchpads[1]} },
     {  3,               togglescratch,  {.v = &scratchpads[2]} },
+    {  4,               togglescratch,  {.v = &scratchpads[2]} },
 };
