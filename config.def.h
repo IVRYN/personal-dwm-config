@@ -152,5 +152,5 @@ static Signal signals[] = {
     {  1,               togglescratch,  {.v = &scratchpads[0]} },
     {  2,               togglescratch,  {.v = &scratchpads[1]} },
     {  3,               togglescratch,  {.v = &scratchpads[2]} },
-    {  4,               togglescratch,  {.v = &scratchpads[2]} },
+    {  4,               togglescratch,  {.v = &scratchpads[3]} },
 };
