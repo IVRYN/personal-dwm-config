@@ -41,6 +41,13 @@ static const Rule rules[] = {
 	{ "Gimp",           NULL,       NULL,                       0,            1,           -1,          50,50,500,500,      borderpx,        0  },
 	{ "firefox",        NULL,       NULL,                       1 << 1,       0,           -1,          50,50,500,500,      borderpx,        0  },
 
+    // Steam and Games
+    { "Steam",          "Steam",    "Steam",                    1 << 3,       0,           -1,          50,50,1000,1000,    borderpx,        0  },
+    { "Steam",          "Steam",    "Friends List",             1 << 3,       1,           -1,          50,50,391,866,    borderpx,          0  },
+
+    { "Terraria.bin.x86_64",        NULL,    NULL,              1 << 3,       0,           -1,          50,50,1000,1000,    borderpx,          0  },
+    { "dotnet",         NULL,       NULL,                       1 << 3,       0,           -1,          50,50,1000,1000,    borderpx,          0  },
+
     // Scratchpads
     { "Alacritty",      NULL,       "Termpad",                  0,            1,           -1,          50,50,850,850,      borderpx,       't' },
 	{ "Alacritty",      NULL,       "Ranger - File Manager",    0,            1,           -1,          50,50,850,850,      borderpx,       'r' },
