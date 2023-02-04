@@ -45,7 +45,7 @@ static const Rule rules[] = {
     { "Alacritty",      NULL,       "Termpad",                  0,            1,           -1,          50,50,850,850,      borderpx,       't' },
 	{ "Alacritty",      NULL,       "Ranger - File Manager",    0,            1,           -1,          50,50,850,850,      borderpx,       'r' },
 	{ "Alacritty",      NULL,       "Htop - Resource Manager",  0,            1,           -1,          50,50,850,850,      borderpx,       'h' },
-	{ "Alacritty",      NULL,       "NcmpCCP - Music Player",   0,            1,           -1,          50,50,850,850,      borderpx,       'p' },
+	{ "Alacritty",      NULL,       "NcmpCPP - Music Player",   0,            1,           -1,          50,50,850,850,      borderpx,       'l' },
 };
 
 /* layout(s) */
@@ -84,7 +84,7 @@ static const char *scratchpads[][9] =
     {"t", "alacritty", "-t", "Termpad", NULL },
     {"r", "alacritty", "-t", "Ranger - File Manager", "-e", "ranger", NULL },
     {"h", "alacritty", "-t", "Htop - Resource Manager", "-e", "htop", NULL },
-    {"p", "alacritty", "-t", "NcmpCPP - Music Player", "-e", "ncmpcpp", NULL },
+    {"l", "alacritty", "-t", "NcmpCPP - Music Player", "-e", "ncmpcpp", NULL },
 };
 
 static const Key keys[] = {
