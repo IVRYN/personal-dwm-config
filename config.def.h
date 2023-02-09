@@ -11,7 +11,7 @@ static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display 
 static const int showsystray        = 1;     /* 0 means no systray */
 static const int showbar            = 1;     /* 0 means no bar */
 static const int topbar             = 1;     /* 0 means bottom bar */
-static const char *fonts[]          = { "Hack Nerd Font Mono:size=10" };
+static const char *fonts[]          = { "Hack Nerd Font Mono:size=10", "WenQuanYi Micro Hei Mono:size=10" };
 
 #define ICONSIZE 16 // winicon size
 #define ICONSPACING 10 // space between icon and title
@@ -45,10 +45,20 @@ static const Rule rules[] = {
 
     // Steam and Games
     { "Steam",          "Steam",    "Steam",                    1 << 3,       0,           -1,          50,50,1000,1000,    borderpx,        0  },
-    { "Steam",          "Steam",    "Friends List",             1 << 3,       1,           -1,          50,50,391,866,    borderpx,          0  },
+    { "Steam",          "Steam",    "Friends List",             1 << 3,       1,           -1,          50,50,391,866,      borderpx,        0  },
 
-    { "Terraria.bin.x86_64",        NULL,    NULL,              1 << 3,       0,           -1,          50,50,1000,1000,    borderpx,          0  },
-    { "dotnet",         NULL,       NULL,                       1 << 3,       0,           -1,          50,50,1000,1000,    borderpx,          0  },
+    { "Terraria.bin.x86_64",        NULL,                       NULL,         1 << 3,       0,          -1,                 50,50,1000,1000, borderpx,        0  },
+    { "dotnet",         NULL,       NULL,                       1 << 3,       0,           -1,          50,50,1000,1000,    borderpx,        0  },
+
+    // Virtual Machines
+    { "virt-manager",   NULL,       NULL,                       1 << 4,       0,           -1,          50,50,1000,1000,    borderpx,        0  },
+
+    { "virt-manager",   NULL,       "QEMU/KVM - Connection Details",          1 << 4,       1,           -1,          50,50,1000,1000,    borderpx,        0  },
+    { "virt-manager",   NULL,       "QEMU/KVM User session - Connection Details",           1 << 4,       1,           -1,          50,50,1000,1000,    borderpx,        0  },
+
+    // Any VOIP apps like discord and *shit* teams
+    { "discord",        NULL,       NULL,                       1 << 5,       0,          -1,                 50,50,940,475,   borderpx,     0  },
+    { "steam_app_387290",           NULL,                       NULL,         1 << 5,       0,          -1,                 50,50,1000,1000, borderpx,        0  },
 
     // Scratchpads
     { "Alacritty",      NULL,       "Termpad",                  0,            1,           -1,          50,50,850,850,      borderpx,       't' },
